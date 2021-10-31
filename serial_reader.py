@@ -36,7 +36,7 @@ f = open(output_file,"a") #Open the csv file
 f.write('Timestamp,415nm,445nm,480nm,515nm,555nm,590nm,630nm,680nm\n') #Add headers to the file
 
 while record: #While record = True, run the following code to record and save light values in output_file
-
+    
     ser_bytes = ser.readline() #Read one line from the port
     decoded_bytes = ser_bytes.decode('utf-8') #Convert the read data so it's legible
     decoded_bytes_split = decoded_bytes.strip().split(',') #Strip away the prefix and suffix characters, and split the values using the comma as the separator
@@ -55,7 +55,7 @@ while record: #While record = True, run the following code to record and save li
     now = datetime.now().strftime('%Y-%m-%d_%H:%M:%S.%f')
     
     # Print out the values in the terminal
-    print('{} | 415nm: {} | 445nm: {} | 480nm: {} | 515nm: {} | 555nm: {} | 590: {} | 630nnm: {} | 680nm: {}'.format(
+    print('{} | 415nm: {} | 445nm: {} | 480nm: {} | 515nm: {} | 555nm: {} | 590nm: {} | 630nnm: {} | 680nm: {}'.format(
                                                 now[0:-7],
                                                 value_415,
                                                 value_445,
