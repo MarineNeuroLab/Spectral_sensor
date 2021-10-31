@@ -3,6 +3,8 @@ Save data from a AS7341 spectral sensor.
 
 Save data from a [AS7341 spectral sensor](https://learn.adafruit.com/adafruit-as7341-10-channel-light-color-sensor-breakout) ([instructions](https://learn.adafruit.com/adafruit-as7341-10-channel-light-color-sensor-breakout/python-circuitpython)) connected to a [QT Py RP2040](https://www.adafruit.com/product/4900) with a [STEMMA QT cable](https://www.adafruit.com/product/4399) and your PC via USB.
 
+<img src="QTPy_with_spectral_sensor.JPG" alt="QT Py with spectral sensor in front of a screen that displays the values being printed out" width="400"/>
+
 ## How it works
 Values from 8 channels on the spectral sensor are saved continuously in a csv file on your computer until a specified key on your keyboard is pressed.
 
